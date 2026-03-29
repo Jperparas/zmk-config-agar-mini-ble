@@ -206,10 +206,89 @@
     };
     combos {
         compatible = "zmk,combos";
+
+        // Firmware version check (original)
         combo_clear_mods {
             timeout-ms = <20>;
-            key-positions = <1 11>; // Q  and \|
+            key-positions = <1 11>;
             bindings = <&FW_VER>;
+        };
+
+        // Esc - both spacebars
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <39 40>;
+            bindings = <&kp ESC>;
+        };
+
+        // Backslash - minus + equals
+        combo_bslh {
+            timeout-ms = <30>;
+            key-positions = <11 12>;
+            bindings = <&kp BSLH>;
+        };
+
+        // Left bracket - A + S
+        combo_lbkt {
+            timeout-ms = <30>;
+            key-positions = <14 15>;
+            bindings = <&kp LBKT>;
+        };
+
+        // Right bracket - L + ;
+        combo_rbkt {
+            timeout-ms = <30>;
+            key-positions = <22 23>;
+            bindings = <&kp RBKT>;
+        };
+
+        // Left brace - E + R
+        combo_lbrc {
+            timeout-ms = <30>;
+            key-positions = <3 4>;
+            bindings = <&kp LBRC>;
+        };
+
+        // Right brace - U + I
+        combo_rbrc {
+            timeout-ms = <30>;
+            key-positions = <7 8>;
+            bindings = <&kp RBRC>;
+        };
+
+        // Left paren - D + F
+        combo_lpar {
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&kp LPAR>;
+        };
+
+        // Right paren - J + K
+        combo_rpar {
+            timeout-ms = <30>;
+            key-positions = <20 21>;
+            bindings = <&kp RPAR>;
+        };
+
+        // Apostrophe - comma + dot
+        combo_apos {
+            timeout-ms = <30>;
+            key-positions = <33 34>;
+            bindings = <&kp SQT>;
+        };
+
+        // Forward slash - dot + up
+        combo_fslh {
+            timeout-ms = <30>;
+            key-positions = <34 35>;
+            bindings = <&kp FSLH>;
+        };
+
+        // Delete - up + right
+        combo_del {
+            timeout-ms = <30>;
+            key-positions = <35 36>;
+            bindings = <&kp DEL>;
         };
     };
 };
